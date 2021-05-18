@@ -82,6 +82,17 @@ class ViewController: UIViewController {
     
     
     
+    @IBAction func checkAnswer(_ sender: Any) {
+        
+        let checkVC = self.storyboard?.instantiateViewController(identifier: "checkVC") as! CheckViewController
+        
+        checkVC.odaiString = odaiLabel.text!
+        
+        self.navigationController?.pushViewController(checkVC, animated: true)
+    }
+    
+    
+    
     
 }
 

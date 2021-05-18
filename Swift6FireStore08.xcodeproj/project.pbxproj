@@ -15,6 +15,8 @@
 		05D91B262652008900F788C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05D91B242652008900F788C5 /* LaunchScreen.storyboard */; };
 		05D91B2F2652173100F788C5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D91B2E2652173100F788C5 /* LoginViewController.swift */; };
 		05D91B312652211B00F788C5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 05D91B302652211B00F788C5 /* GoogleService-Info.plist */; };
+		05D91B332652797B00F788C5 /* CheckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D91B322652797B00F788C5 /* CheckViewController.swift */; };
+		05D91B3626528E3D00F788C5 /* AnswersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D91B3526528E3D00F788C5 /* AnswersModel.swift */; };
 		7B847E8BCDA3506B2DEC02FB /* Pods_Swift6FireStore08.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 918A85F2F7F2039B02F93148 /* Pods_Swift6FireStore08.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +31,8 @@
 		05D91B272652008900F788C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		05D91B2E2652173100F788C5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		05D91B302652211B00F788C5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		05D91B322652797B00F788C5 /* CheckViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckViewController.swift; sourceTree = "<group>"; };
+		05D91B3526528E3D00F788C5 /* AnswersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswersModel.swift; sourceTree = "<group>"; };
 		918A85F2F7F2039B02F93148 /* Pods_Swift6FireStore08.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swift6FireStore08.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD1B15EDDD586871B22AA68B /* Pods-Swift6FireStore08.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift6FireStore08.debug.xcconfig"; path = "Target Support Files/Pods-Swift6FireStore08/Pods-Swift6FireStore08.debug.xcconfig"; sourceTree = "<group>"; };
 		D6C84DF241A0FCC89ACBEF67 /* Pods-Swift6FireStore08.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift6FireStore08.release.xcconfig"; path = "Target Support Files/Pods-Swift6FireStore08/Pods-Swift6FireStore08.release.xcconfig"; sourceTree = "<group>"; };
@@ -69,6 +73,7 @@
 			children = (
 				05D91B192652007E00F788C5 /* AppDelegate.swift */,
 				05D91B1B2652007E00F788C5 /* SceneDelegate.swift */,
+				05D91B3426528E1C00F788C5 /* Model */,
 				05D91B2D2652171200F788C5 /* Controller */,
 				05D91B1F2652007E00F788C5 /* Main.storyboard */,
 				05D91B222652008900F788C5 /* Assets.xcassets */,
@@ -84,8 +89,17 @@
 			children = (
 				05D91B1D2652007E00F788C5 /* ViewController.swift */,
 				05D91B2E2652173100F788C5 /* LoginViewController.swift */,
+				05D91B322652797B00F788C5 /* CheckViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		05D91B3426528E1C00F788C5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				05D91B3526528E3D00F788C5 /* AnswersModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		53968BE48E5F0254C906716C /* Frameworks */ = {
@@ -221,8 +235,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				05D91B2F2652173100F788C5 /* LoginViewController.swift in Sources */,
+				05D91B3626528E3D00F788C5 /* AnswersModel.swift in Sources */,
 				05D91B1E2652007E00F788C5 /* ViewController.swift in Sources */,
 				05D91B1A2652007E00F788C5 /* AppDelegate.swift in Sources */,
+				05D91B332652797B00F788C5 /* CheckViewController.swift in Sources */,
 				05D91B1C2652007E00F788C5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
