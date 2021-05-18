@@ -210,10 +210,10 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="83.705357142857139"/>
         </scene>
-        <!--View Controller-->
+        <!--Comment View Controller-->
         <scene sceneID="YyI-Or-NvE">
             <objects>
-                <viewController id="MMy-yw-i4C" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="commentVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="MMy-yw-i4C" customClass="CommentViewController" customModule="Swift6FireStore08" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VFb-kb-ISG">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -242,14 +242,19 @@
                                             <rect key="frame" x="0.0" y="0.0" width="390" height="55"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KbZ-29-1Qc">
-                                                    <rect key="frame" x="20" y="17" width="350" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KbZ-29-1Qc">
+                                                    <rect key="frame" x="30" y="21" width="350" height="13"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="KbZ-29-1Qc" firstAttribute="trailing" secondItem="v3B-6C-as9" secondAttribute="trailingMargin" constant="10" id="1pW-YC-AD6"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="KbZ-29-1Qc" secondAttribute="bottom" constant="10" id="AxX-Or-aSt"/>
+                                                <constraint firstItem="KbZ-29-1Qc" firstAttribute="top" secondItem="v3B-6C-as9" secondAttribute="topMargin" constant="10" id="Hj8-bL-VtF"/>
+                                                <constraint firstItem="KbZ-29-1Qc" firstAttribute="leading" secondItem="v3B-6C-as9" secondAttribute="leadingMargin" constant="10" id="fd4-Vi-1M9"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </tableViewCell>
@@ -265,12 +270,21 @@
                                 <rect key="frame" x="316" y="775" width="45" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="send"/>
+                                <connections>
+                                    <action selector="sendAction:" destination="MMy-yw-i4C" eventType="touchUpInside" id="liC-tw-cZo"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="uh6-bq-AtS"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="Cxo-d8-TRz"/>
+                    <connections>
+                        <outlet property="kaitoLabel" destination="lx3-a6-RLe" id="eBY-zG-qm6"/>
+                        <outlet property="sendButton" destination="FDP-On-Lfm" id="8Ns-84-Xaw"/>
+                        <outlet property="tableView" destination="SRC-LV-gyd" id="wYA-z0-NIB"/>
+                        <outlet property="textField" destination="25K-Rr-z8v" id="rOa-DP-2qg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p6H-YA-wWZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

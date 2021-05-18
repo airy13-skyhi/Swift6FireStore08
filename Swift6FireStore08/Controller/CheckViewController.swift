@@ -74,6 +74,15 @@ class CheckViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let commentVC = self.storyboard?.instantiateViewController(withIdentifier: "commentVC") as! CommentViewController
+        commentVC.idString = dataSets[indexPath.row].docID
+        commentVC.kaitoString = "\(self.dataSets[indexPath.row].userName)くんの回答\n\(self.dataSets[indexPath.row].answers)"
+        
+        self.navigationController?.pushViewController(commentVC, animated: true)
+    }
+    
     
     func loadData() {
         
